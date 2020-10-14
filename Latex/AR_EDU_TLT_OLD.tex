@@ -1,0 +1,284 @@
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+
+% *** CITATION PACKAGES ***
+%
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  \usepackage[pdftex]{graphicx}
+  \graphicspath{{./figures/}{../jpeg/}}
+  \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+\fi
+
+% *** MATH PACKAGES ***
+\usepackage{amsmath}
+\usepackage{svg}
+
+% *** ALIGNMENT PACKAGES ***
+%
+\usepackage{array}
+
+% *** SUBFIGURE PACKAGES ***
+\ifCLASSOPTIONcompsoc
+  \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
+\else
+  \usepackage[caption=false,font=footnotesize]{subfig}
+\fi
+
+% *** FLOAT PACKAGES ***
+\usepackage{stfloats}
+%\usepackage{dblfloatfix}
+
+
+%\ifCLASSOPTIONcaptionsoff
+%  \usepackage[nomarkers]{endfloat}
+% \let\MYoriglatexcaption\caption
+% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
+%\fi
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+
+% *** OTHER PACKAGES ***
+\usepackage[textwidth=1.5cm]{todonotes}
+\usepackage{glossaries}
+
+\setuptodonotes{color=blue!30, size=\scriptsize}
+%% Para utilizar un glosario (lista de acronimos)
+\makeglossaries
+\input{glossary}
+
+
+% *** NEW COMMANDS ***
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\setlength{\extrarowheight}{2pt}
+\newcommand{\papers}[0]{80 }
+\newcommand{\papersevaluated}[0]{56 }
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor a-na-ly-sed}
+
+
+\begin{document}
+%
+% paper title
+% Titles are generally capitalized except for words such as a, an, and, as,
+% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
+% not capitalized unless they are the first or last word of the title.
+% Linebreaks \\ can be used within to get better formatting as desired.
+% Do not put math or special symbols in the title.
+% \title{Collaborative Augmented Reality Applications in Primary and Secondary Education\\A Systematic Review}
+
+\title{Interactive, Collaborative and Multi-user Augmented Reality Applications in Primary and Secondary Education. A Systematic Review.}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+%
+%\IEEEcompsocitemizethanks is a special \thanks that produces the bulleted
+% lists the Computer Society journals use for "first footnote" author
+% affiliations. Use \IEEEcompsocthanksitem which works much like \item
+% for each affiliation group. When not in compsoc mode,
+% \IEEEcompsocitemizethanks becomes like \thanks and
+% \IEEEcompsocthanksitem becomes a line break with idention. This
+% facilitates dual compilation, although admittedly the differences in the
+% desired content of \author between the different types of papers makes a
+% one-size-fits-all approach a daunting prospect. For instance, compsoc 
+% journal papers have the author affiliations above the "Manuscript
+% received ..."  text while in non-compsoc journals this is reversed. Sigh.
+
+\author{
+    Stefano~Masneri,
+    Ana~Domínguez,
+    Iñigo~Tamayo,
+    Mikel~Zorrilla,
+    Mikel~Larrañaga,~\IEEEmembership{Member,~IEEE,}
+    and~Ana~Arruarte% <-this % stops a space
+    \IEEEcompsocitemizethanks{
+        \IEEEcompsocthanksitem S. Masneri, A. Dominguez, I. Tamayo and M. Zorrilla are with the Department
+        of Digital Media, Vicomtech, San Sebastian,
+        \IEEEcompsocthanksitem S. Masneri, A. Arruarte and M. Larrañaga are with the Department of Computer Languages and Systems, University of the Basque Country UPV/EHU, San Sebastian, 20018, Spain.}% <-this % stops an unwanted space
+    \thanks{Manuscript received month day, year; revised month day, year.}
+}
+
+
+% The paper headers
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
+
+
+% The publisher's ID mark at the bottom of the page is less important with
+% Computer Society journal papers as those publications place the marks
+% outside of the main text columns and, therefore, unlike regular IEEE
+% journals, the available text space is not reduced by their presence.
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
+% or like this to get the Computer Society new two part style.
+%\IEEEpubid{\makebox[\columnwidth]{\hfill 0000--0000/00/\$00.00~\copyright~2015 IEEE}%
+%\hspace{\columnsep}\makebox[\columnwidth]{Published by the IEEE Computer Society\hfill}}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark (Computer Society jorunal
+% papers don't need this extra clearance.)
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+% for Computer Society papers, we must declare the abstract and index terms
+% PRIOR to the title within the \IEEEtitleabstractindextext IEEEtran
+% command as these need to go into the title area created by \maketitle.
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+Augmented Reality is a technology that enhances human perception with additional, artificially generated sensory inputs to create a new experience enhancing human vision by combining natural with digital offers. Augmented Reality development dates back to the early nineties but only in the last decade, thanks to improvements to hardware and software, it has seen an accelerated adoption in several fields, including education. This study presents a systematic review of the literature on the use of augmented reality applications in primary and secondary schools, with a specific focus on collaborative, multi-user and interactive applications. The aim of the study is to investigate the characteristics of such applications, the processes that led to their adoptions, and their effectiveness in enhancing the learning experience. This study synthesizes a set of \papers publications from 2015 to 2020 and performs a qualitative analysis of their content. The review describes the current state of the art on research in Augmented Reality for education and provides future research lines, as well as trends for the future of such applications for educational settings, analysing the relevance of the multi-user interaction challenge within the Augmented Reality ecosystem.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Augmented Reality, Education, Literature Review, Interactive Technologies, Multi-user applications.
+\end{IEEEkeywords}}
+
+
+% make the title area
+\maketitle
+
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+\IEEEraisesectionheading{\section{Introduction}\label{sec:introduction}}
+
+\input{introduction}
+
+\input{methods}
+
+\input{results}
+
+\input{discussion}
+
+\input{conclusions}
+
+
+% use section* for acknowledgment
+\ifCLASSOPTIONcompsoc
+  % The Computer Society usually uses the plural form
+  \section*{Acknowledgments}
+\else
+  % regular IEEE prefers the singular form
+  \section*{Acknowledgment}
+\fi
+
+The research in the UPV/EHU has been partially supported by the ADIAN grant IT980-16 (Basque government).
+The research in Vicomtech has been supported by European Union’s Horizon 2020 research and innovation programme under grant agreement No 856533, project ARETE (Augmented Reality Interactive Educational System).
+
+% references section
+\bibliography{bibliography.bib}{}
+\bibliographystyle{IEEEtran}
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+% \begin{thebibliography}{1}
+
+% \bibitem{IEEEhowto:kopka}
+% H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+% \end{thebibliography}
+
+% biography section
+% 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
+% or if you just want to reserve a space for a photo:
+
+\begin{IEEEbiography}{Michael Shell}
+Biography text here.
+\end{IEEEbiography}
+
+% if you will not have a photo at all:
+\begin{IEEEbiographynophoto}{John Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiographynophoto}{Jane Doe}
+Biography text here.
+\end{IEEEbiographynophoto}
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+
+
+% that's all folks
+\end{document}
+
+

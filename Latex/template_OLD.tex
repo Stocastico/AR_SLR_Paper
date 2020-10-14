@@ -1,0 +1,131 @@
+\RequirePackage{fix-cm}
+%
+%\documentclass{svjour3}                     % onecolumn (standard format)
+%\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
+%\documentclass[smallextended]{svjour3}       % onecolumn (second format)
+\documentclass[twocolumn]{svjour3}          % twocolumn
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{svg}
+\usepackage{array}
+\usepackage{url}
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{abstract}
+
+%\usepackage[textwidth=1.5cm]{todonotes}
+%\setuptodonotes{color=blue!30, size=\scriptsize}
+%\makeglossaries
+\input{glossary}
+
+% \hfuzz=5pt
+% \vfuzz=5pt
+% \hbadness=2000
+% \vbadness=\maxdimen
+
+% etc.
+%
+% please place your own definitions here and don't use \def but
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\setlength{\extrarowheight}{2pt}
+\newcommand{\papersWithNumStudentInfo}[0]{77 }
+\newcommand{\papersWithEvaluation}[0]{59 }
+\newcommand{\hardwareHMD}[0]{six }
+\newcommand{\papersAfterTwentyEighteen}[0]{65 }
+\newcommand{\allPapers}[0]{1605 }
+\newcommand{\duplPapers}[0]{234 }
+\newcommand{\papersCheckAbstract}[0]{1371 }
+\newcommand{\papersToRead}[0]{229 }
+\newcommand{\papersExludedAfterReading}[0]{137 }
+\newcommand{\papersSelected}[0]{92 }
+\newcommand{\papersMultiuser}[0]{17 }
+\newcommand{\papersCollab}[0]{13 }
+\newcommand{\papersGames}[0]{11 }
+
+\newenvironment{abstract2}
+ {\small
+  \begin{center}
+  \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+  \end{center}
+  \list{}{%
+    \setlength{\leftmargin}{0mm}% <---------- CHANGE HERE
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
+
+% correct bad hyphenation here
+\hyphenation{semi-conduc-tor ana-ly-sed cha-rac-te-ristics dif-fe-rent func-tion-a-li-ties func-tion-a-li-ty un-der-stand-ing a-na-ly-sis}
+
+
+%
+% Insert the name of "your journal" with
+\journalname{Virtual Reality}
+%
+\begin{document}
+
+\title{Interactive, Collaborative and Multi-user Augmented Reality Applications in Primary and Secondary Education}
+\subtitle{A Systematic Review}
+
+%\titlerunning{Short form of title}        % if too long for running head
+
+\author{Stefano Masneri$^{1,2}$ \and
+        Ana Domínguez$^{1}$   \and
+        Iñigo Tamayo$^{1}$    \and
+        Mikel Zorrilla$^{1}$  \and
+        Mikel Larrañaga$^{2}$ \and 
+        Ana Arruarte$^{2}$%etc.
+}
+
+%\authorrunning{Short form of author list} % if too long for running head
+
+\institute{
+    S.~Masneri\\\email{smasneri@vicomtech.org} \\
+    A.~Domínguez\\\email{adominguez@vicomtech.org} \\
+    I.~Tamayo\\\email{itamayo@vicomtech.org} \\
+    M. Zorrilla\\\email{mzorrilla@vicomtech.org} \\
+    M. Larrañaga\\\email{m.larranaga@ehu.eus} \\
+    A. Arruarte\\\email{a.arruarte@ehu.eus} \\ \\
+    $^{1}$Vicomtech Foundation, Basque Research and Technology Alliance (BRTA), San Sebasti\'an, Spain. \\ 
+    $^{2}$Computer Languages and Systems, University of the Basque Country (UPV/EHU), San Sebasti\'an, Spain.
+}
+
+\date{Received: date / Accepted: date}
+% The correct dates will be entered by the editor
+
+
+\maketitle
+\begin{abstract2}
+Augmented Reality is a technology that enhances human perception with additional, artificially generated sensory inputs to create a new experience enriching human vision by combining natural with digital offers. Augmented Reality development dates back to the early nineties but only in the last decade, thanks to improvements to hardware and software, it has been quickly incorporated in several fields, including education. This study presents a systematic review of the literature on the use of augmented reality applications in primary and secondary schools, with a specific focus on collaborative, multi-user and interactive applications. The aim of the study is to investigate the characteristics of such applications, the processes that led to their adoptions, and their effectiveness in enhancing the learning experience. This study synthesises a set of \papersSelected publications from 2015 to 2020 and performs a qualitative analysis of their content. The review describes the current state of the art on research in Augmented Reality for education and provides future research lines, as well as trends for the future of such applications for educational settings, analysing the relevance of the multi-user interaction challenge within the Augmented Reality ecosystem.
+\keywords{Augmented Reality \and Education \and Literature Review \and Interactive Technologies \and Multi-user applications \and Collaborative}
+\end{abstract2}
+
+\input{introduction}
+
+\input{methods}
+
+\input{results}
+
+\input{discussion}
+
+\input{conclusions}
+
+\begin{acknowledgements}
+The research in Vicomtech has been supported by European Union’s Horizon 2020 research and innovation programme under grant agreement No 856533, project ARETE (Augmented Reality Interactive Educational System).
+The research in the UPV/EHU has been partially supported by the ADIAN grant IT980-16 from the Basque government.
+\end{acknowledgements}
+
+\section*{Conflict of interest}
+The authors declare that they have no conflict of interest.
+
+\bibliographystyle{spbasic}   % basic style, author-year citations
+\bibliography{bibliography}   % name your BibTeX data base
+
+\end{document}
+% end of file template.tex
+

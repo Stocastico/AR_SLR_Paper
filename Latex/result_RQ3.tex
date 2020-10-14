@@ -1,0 +1,47 @@
+\subsection{Effectiveness of collaborative AR applications}
+
+This subsection addresses the third research question. Of the \papersSelected studies selected for this \gls{SLR}, only \papersWithNumStudentInfo of them provided information about the number of students who tested the AR application. The number of students participating ranged from 2 to 290. Around 60\% of the studies were carried out with less than 40 participants, and another 30\% were carried out with a number of participants between 41 and 80 students. Only 7 studies employed 100 or more students for the evaluation. Fig. \ref{fig:testers} shows the histogram representing the distribution of users who tested the \gls{AR} application across the studies selected for review.
+
+The analysis of the studies shows three main ways for evaluating how effective a \gls{AR} application can be in helping students improve their understanding of a subject:
+\begin{itemize}
+    \item performing pre and post tests,
+    \item comparing with a control group,
+    \item asking teacher to fill surveys after the experiment.
+\end{itemize}
+
+\begin{figure}[ht]	
+	\begin{center}
+	\includesvg[width=0.48\textwidth]{figures/hist_testers}
+	\caption{Histogram of the participant in user tests across different studies (grey) and its smooth density estimate (black).}
+	\label{fig:testers}
+    \end{center}
+\end{figure}
+
+While the first two options try to objectively measure the impact of using \gls{AR}, by analysing the students' grades, the third option relies on the personal judgement of the teacher, and can in principle be subject to biases.
+In Table \ref{tab:categorize_papers_evaluation}, we classify the \papersSelected articles we reviewed into the categories described above. Some of the studies can appear on multiple rows in the table, meaning that they evaluate students' result in more than one way. The table does not include studies where no evaluation was performed, or where surveys only asked about the app usability and ease of use.
+
+\begin{table*}[htbp]
+\centering
+\caption {Classification of studies according to the method used to evaluate effectiveness of \gls{AR} in the classroom.}\label{tab:categorize_papers_evaluation}
+\begin{tabular}{|M{5cm}||M{9.5cm}|}
+
+    \hline
+    \textbf{Evaluation type} & \textbf{Articles} \\
+    \hline
+    \hline
+    Pre and post tests & \citep{lai2015applying, chao2018study, cao2019hand, el2019educational, cen2019augmented, huang2016animating, chang2018impacts, limsukhawat2016development, liou2017influences, laine2016designing, lin2016effect, ibanez2020impact, chen2018application, nasongkhla2019implementing, huang2019learning, lin2019primary, xefteris2018learning, pombo2019learning, thamrongrat2019design, ortiz2018evaluation, li2018see, chang2019applying, xefteris2019mixing, lee2018augmented, oh2017hybrid, chen2019effects, liu2020ar, carlos2020voluminis, korosidou2019gamifying}\\
+    \hline
+    Control group & \citep{arcos2016playful, cen2019augmented, huang2016animating, chang2018impacts, cai2017applications, hsu2017learning, hrishikesh2016interactive, sarkar2018scholar, thamrongrat2019design, ortiz2018evaluation, hsieh2019intelligence, yilmaz2017using, giasiranis2017flow, takahashi2018empathic, carlos2020voluminis}\\ 
+    \hline 
+    Teacher survey & \citep{costa2019augmented, luna2018words, ramos2019artitser, el2019educational, cen2019augmented, chang2018impacts, wang2017exploring, ferrer2017virtual, pombo2017marker, pombo2018edupark, chen2016augmented, oh2016designing, tscholl2016designing, wang2018augmented, mylonas2019educational, ManriqueJuan2017APA, chen2015construction, chen2018application, huang2019learning, mahmoudi2018color, gardeli2018effect, triantafyllidou2017fingertrips, xefteris2018learning, hsu2018cobochild, palaigeorgiou2018touching, pombo2019learning, ortiz2018evaluation, li2018see, hsieh2019intelligence, kalpakis2018promoting, oh2017hybrid, chen2019effects}\\
+    %\hline
+    % No evaluation & \citep{tang2015learning, ang2019enhancing, sorrentino2015speaky, zhao2018augmented}  \citep{iqbal2019exploring, protopsaltis2016quiz, kum2019ar, rusinol2018augmented, kurniawan2018human, khan2018mathland, laviole2018nectar, boonbrahm2016interactive, cao2018research, antoniou2017scoping, daineko2018development, lee2019mobile, boonbrahm2015using, amrit2015studies, wei2019influence, cerqueira2018learning, klautke2018bridging, wei2018improving, rammos2019alternative, lytridis2018artutor}\\
+    \hline
+
+\end{tabular}
+\end{table*}
+
+It is worth mentioning the work described in \citep{chang2018impacts}, as the researchers developed a system which, apart from the AR application, includes a \gls{DBMS}, a teacher interface and an e-learning platform. The evaluation of the system includes a statistical analysis of the performance of the students and their learning achievements, as well as an analysis of the ease of use of the system for teachers and students. The application described in \citep{thamrongrat2019design} uses AR to teach children about 3D geometry. Pre and post tests were used along with quizzes to evaluate the system. The results showed that students who used the AR applications consistently had better grades than the control group, but such results were not statistically significant. Analysing the results for different tasks, though, the data showed that the group who used AR performed worse on the easiest task, while performing much better (with statistically significant results) than the control group. From this, the authors conclude that AR can be a valuable tool in learning difficult geometric concepts. The same study also conducted tests about the user experience, and the results showed that the AR application could engage its users in the learning activities, with good usability, high attractiveness and very high level of worthiness and interest.
+The app described in \citep{cen2019augmented} is used to teach Chemistry to 45 high school students and shows different behaviour depending on the distance of the device from the markers. The authors performed a quantitative evaluation of the system, analysing grades and the distribution of mistakes in the different quizzes. They conclude that there is a statistically significant improvement in the performances of the students, and that the greater the difficulty level of the question, the bigger the performance improvement over the control group. The authors conclude that their Augmented Immersive Reality (AIR) system is most likely responsible for the bulk of learning improvements and knowledge retention gains demonstrated in their case study, since that is the critical component differentiating their system from other applications available on the market.
+
+It is worth noting that, of the \papersWithEvaluation studies presenting a quantitative evaluation of the results, none of them concludes that using AR in the classroom has a negative impact on the students' results and engagement in the classroom. Even though in many cases the improvement over traditional teaching methods is limited, only the work of \citet{carlos2020voluminis} does not detect any positive impact. This consensus on the effectiveness of AR applications is unexpected: besides the commonplace explication (AR is indeed a successful medium with positive impact on students' results) two other possible explanations are the novelty effect \citep{pisapia1993learning}, which explains the performance improvements introduced by a new technology such as AR in response to an increased interest of the user, and the positive publication bias \citep{begg1994publication}, which makes it harder for researchers to publish studies with negative results.
