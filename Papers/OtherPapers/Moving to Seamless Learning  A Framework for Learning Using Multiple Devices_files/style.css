@@ -1,0 +1,261 @@
+/*
+ Theme Name: Howe
+ Theme URI: https://pressbooks.com/themes/pressbooks-howe
+ Description: Named for Harriet Howe, one of the founders of the University of Washington Information School. This theme is especially good for for research reports, white papers, and other non-fiction.
+ Author: Pressbooks (Book Oven Inc.)
+ Author URI: https://pressbooks.com/example-exports
+ Copyright 2011-2015 Book Oven Inc. (Pressbooks.com) code@pressbooks.com
+ Version: 1.6.1
+ Template: pressbooks-book
+ Tags: Nonfiction, Whitepapaer, Academic, Research, Report, Color
+ */
+@font-face {
+  font-family: 'Noto Sans CJK SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://pressbooks.com/app/uploads/assets/fonts/NotoSansCJKsc-Regular.otf) format('truetype'); }
+
+@font-face {
+  font-family: 'Noto Sans CJK SC';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://pressbooks.com/app/uploads/assets/fonts/NotoSansCJKsc-Bold.otf) format('truetype'); }
+
+@font-face {
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://pressbooks.com/app/uploads/assets/fonts/NotoSansCJKtc-Light.otf) format('truetype'); }
+
+@font-face {
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://pressbooks.com/app/uploads/assets/fonts/NotoSansCJKtc-Regular.otf) format('truetype'); }
+
+@font-face {
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: bold;
+  src: url(https://pressbooks.com/app/uploads/assets/fonts/NotoSansCJKtc-Bold.otf) format('truetype'); }
+
+body {
+  font-family: "Open Sans", 'Noto Sans CJK SC', 'Noto Sans CJK TC', sans-serif;
+  font-size: 1em;
+  line-height: 1.4; }
+
+a {
+  color: #e62128;
+  text-decoration: none; }
+
+code {
+  font-size: 0.9em;
+  background-color: #f9f6b3; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  margin-bottom: 7px;
+  text-align: left; }
+
+h1, h2 {
+  color: #009cb6;
+  font-size: 1.4em; }
+
+h2 {
+  font-size: 1.2em; }
+
+h3, h4 {
+  color: #e62128;
+  font-size: 0.875em;
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+
+h4 {
+  display: inline-block;
+  margin-bottom: 0; }
+
+h5 {
+  color: #828282;
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 0; }
+
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 30px; }
+
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p {
+  margin-top: 0; }
+
+h1 + h2, h2 + h3, h3 + h4 {
+  margin-top: 30px; }
+
+h4 + p {
+  display: inline; }
+
+h4 + p:after {
+  content: '\A';
+  white-space: pre;
+  display: block; }
+
+.entry-content ul, .entry-content ol {
+  margin-left: 30px;
+  padding-left: 15px;
+  margin-bottom: 30px; }
+
+.entry-content ul, .entry-content ol, .entry-content p {
+  margin-bottom: 30px; }
+
+.entry-content ol {
+  list-style: decimal outside; }
+
+.entry-content ol li:before {
+  content: none; }
+
+.entry-content li p {
+  margin-bottom: 20px; }
+
+blockquote {
+  background: none;
+  margin: 20px auto;
+  padding: 0;
+  width: 90%; }
+
+blockquote p {
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0; }
+
+#content table {
+  border: none; }
+
+#content table th, #content table td {
+  border-bottom: 1px dotted #333;
+  border-top: none; }
+
+#content table th {
+  color: #e62128; }
+
+#content table th span {
+  color: #000; }
+
+hr {
+  border: none; }
+/****************************************
+ TOC, Author page, Book Page
+ *****************************************/
+#booknav {
+  padding-left: 0; }
+/****************************************
+ Structure
+ *****************************************/
+/****************************************
+ Title, Subtitle, Authors & Aphorism
+ *****************************************/
+.author-wrap h3 {
+  color: #333; }
+
+.entry-title {
+  color: inherit;
+  font-weight: lighter;
+  font-size: 1.8em;
+  text-align: left;
+  margin: 100px 0 80px; }
+
+.entry-title span {
+  color: #e62128;
+  font: italic 0.54em "Crimson Text", serif;
+  margin-bottom: 5px; }
+
+.entry-title span:before {
+  content: 'Chapter '; }
+
+.aphorism {
+  color: #e62128;
+  margin-top: -3.5em;
+  padding-left: 0; }
+
+.aphorism p {
+  font-size: 1.1em;
+  font-style: normal;
+  text-align: left; }
+
+.aphorism cite {
+  display: block;
+  float: none;
+  font-style: italic;
+  font-variant: normal; }
+
+.textbox {
+  background-color: #f9f6b3;
+  border: 1px dotted #828282; }
+
+.textbox p {
+  margin-bottom: 15px; }
+
+img {
+  background-color: transparent;
+  padding: 0; }
+
+.wp-caption-text {
+  color: #828282;
+  text-align: left; }
+/*************************
+ Footnotes & Endnote
+ **************************/
+.footnotes {
+  border-top: 1px solid #000;
+  padding-top: 25px; }
+
+.footnotes ol {
+  margin-left: 0; }
+/*************************
+ Comment form
+ **************************/
+h3#reply-title {
+  color: #333; }
+
+#commentform label, input#submit {
+  font-family: "Open Sans", sans-serif;
+  background-color: #009cb6;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  filter: inherit;
+  border: none;
+  box-shadow: none;
+  text-shadow: none; }
+
+#commentform label {
+  background-color: transparent; }
+
+input#submit:hover {
+  background-color: #01879d;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  filter: inherit; }
+
+input#submit:active {
+  background-color: #01879d;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  filter: inherit; }
+
+#content p + p {
+  text-indent: 0em;
+  margin-top: 1em; }
