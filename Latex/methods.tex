@@ -9,7 +9,8 @@ For this review, we followed the guidelines proposed by \citet{kitchenham2009sys
     \item \textbf{Context}: Education, primary or secondary schools
 \end{itemize}
 
-Once the research questions have been defined, the literature review is split into three steps: planning, conducting and reporting. We used the online tool Parsifal\footnote{parsif.al} to conduct the first two steps of the review while the third was performed using Google Forms and collecting the results in a spreadsheet. The results of the data collection, as well as the code used to generate the figures in this document, is available on Github\footnote{github.com/Stocastico/AR\_SLR\_Paper}.
+Once the research questions have been defined, the literature review is split into three steps: planning, conducting and reporting. We used the online tool Parsifal\footnote{parsif.al} to conduct the first two steps of the review while the third was performed using Google Forms and collecting the results in a spreadsheet. The results of the data collection, as well as the code used to generate the figures in this document, is available on Github\footnote{\textless removed for review\textgreater}
+%github.com/Stocastico/AR\_SLR\_Paper}.
 
 \subsection{Study selection}
 The aim of this phase is to select the papers which are relevant for the systematic review, define the inclusion and exclusion criteria, and to provide the categories for the analysis.
@@ -32,7 +33,7 @@ Fig. \ref{fig:flowchart} shows a flowchart depicting the systematic review proce
 \begin{figure}[ht]	
 	\begin{center}
 	%\includesvg[width=0.48\textwidth]{figures/prisma}
-	\includegraphics[width=0.48\textwidth]{figures/prisma.png}
+	\includegraphics[width=0.6\textwidth]{figures/prisma.png}
 	\caption{Prisma flowchart of the search protocol.}
 	\label{fig:flowchart}
     \end{center}
@@ -40,16 +41,17 @@ Fig. \ref{fig:flowchart} shows a flowchart depicting the systematic review proce
 
 
 \begin{table*}[htbp]
+\small
 \centering
 \caption {Query strings and number of papers returned.}\label{tab:searchstring}
-\begin{tabular}{|M{2cm}||M{8.5cm}|M{1.25cm}|M{1.65cm}|M{1.3cm}|}
+\begin{tabular}{|M{1.9cm}||M{8cm}|M{1.25cm}|M{1.85cm}|M{1.45cm}|}
     \hline
          \textbf{Digital Library} & \textbf{Query string} & \textbf{Papers} & \textbf{Duplicates} & \textbf{Selected} \\
     \hline
     \hline
          IEEExplore    &  (``All Metadata'': ``Augmented reality'' AND (``Education'' OR ``Learning'') AND (``Collaborative'' OR ``Interactive'' OR ``multi-user'' OR ``multi-user'') AND (``Application'' OR ``Evaluation'')) Filters Applied: 2015 - 2020 & 116 & 47 & \textbf{32} \\
     \hline
-        Scopus         & TITLE-ABS-KEY ( ``Augmented reality''  AND  ( ``Education''  OR  ``Learning'' )  AND  ( ``Interactive''  OR  ``multi-user''  OR  ``multiuser'' )  AND  ( ``Application''  OR  ``Evaluation'' ) )  AND  ( LIMIT-TO ( PUBYEAR ,  2020 )  OR  LIMIT-TO ( PUBYEAR ,  2019 )  OR  LIMIT-TO ( PUBYEAR ,  2018 )  OR  LIMIT-TO ( PUBYEAR ,  2017 )  OR  LIMIT-TO ( PUBYEAR ,  2016 )  OR  LIMIT-TO ( PUBYEAR ,  2015 ) )    & 476 & 65 & \textbf{92} \\
+        Scopus         & TITLE-ABS-KEY ( ``Augmented reality''  AND  ( ``Education''  OR  ``Learning'' )  AND  ( ``Interactive''  OR  ``multi-user''  OR  ``multiuser'' )  AND  ( ``Application''  OR  ``Evaluation'' ) )  AND  ( PUBYEAR $>$ 2014 )  & 476 & 65 & \textbf{92} \\
     \hline
         Springer       & (collaborative OR interactive OR multiuser OR multi-user) AND ``augmented reality'' AND (education OR learning) AND (primary OR secondary) AND (application OR evaluation)
 within Chapter - Conference Paper  2015 - 2020  & 803 & 67 & \textbf{58} \\

@@ -1,0 +1,60 @@
+\RequirePackage{fix-cm}
+
+\documentclass[twocolumn]{svjour3}          % twocolumn
+
+\smartqed  % flush right qed marks, e.g. at end of proof
+
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{cite}
+\usepackage{svg}
+\usepackage{array}
+\usepackage{url}
+\usepackage{glossaries}
+\usepackage{hyperref}
+
+\input{glossary}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\setlength{\extrarowheight}{2pt}
+\newcommand{\papersWithNumStudentInfo}[0]{77 }
+\newcommand{\papersWithEvaluation}[0]{59 }
+\newcommand{\hardwareHMD}[0]{six }
+\newcommand{\papersAfterTwentyEighteen}[0]{65 }
+\newcommand{\allPapers}[0]{1605 }
+\newcommand{\duplPapers}[0]{234 }
+\newcommand{\papersCheckAbstract}[0]{1371 }
+\newcommand{\papersToRead}[0]{229 }
+\newcommand{\papersExludedAfterReading}[0]{137 }
+\newcommand{\papersSelected}[0]{92 }
+\newcommand{\papersMultiuser}[0]{17 }
+\newcommand{\papersCollab}[0]{13 }
+\newcommand{\papersGames}[0]{11 }
+
+% correct bad hyphenation here
+\hyphenation{ana-ly-sed cha-rac-te-ristics dif-fe-rent func-tion-a-li-ties func-tion-a-li-ty un-der-stand-ing anal-y-sis tech-nol-o-gy find-ings stud-ies de-spite learn-ing cri-ti-cal mar-kers anal-y-sing wide-spread}
+
+% Insert the name of "your journal" with
+\journalname{Virtual Reality}
+
+\begin{document}
+
+\input{header}
+\maketitle
+\input{abstract}
+\input{introduction}
+\input{methods}
+\input{results}
+\input{discussion}
+\input{conclusions}
+\input{acks}
+
+\section*{Conflict of interest}
+The authors declare that they have no conflict of interest.
+
+\bibliographystyle{spbasic}
+\bibliography{bibliography} 
+
+\end{document}
+
+

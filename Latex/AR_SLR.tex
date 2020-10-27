@@ -1,9 +1,6 @@
-\RequirePackage{fix-cm}
+\documentclass[review]{elsarticle}
 
-\documentclass[twocolumn]{svjour3}          % twocolumn
-
-\smartqed  % flush right qed marks, e.g. at end of proof
-
+\usepackage{lineno,hyperref}
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{cite}
@@ -11,8 +8,9 @@
 \usepackage{array}
 \usepackage{url}
 \usepackage{glossaries}
-\usepackage{hyperref}
+\usepackage[margin=2cm]{geometry}
 
+\glsdisablehyper
 \input{glossary}
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
@@ -30,31 +28,98 @@
 \newcommand{\papersMultiuser}[0]{17 }
 \newcommand{\papersCollab}[0]{13 }
 \newcommand{\papersGames}[0]{11 }
+\modulolinenumbers[5]
 
 % correct bad hyphenation here
-\hyphenation{ana-ly-sed cha-rac-te-ristics dif-fe-rent func-tion-a-li-ties func-tion-a-li-ty un-der-stand-ing a-na-ly-sis tech-nol-o-gy find-ings stud-ies de-spite learn-ing cri-ti-cal mar-kers}
+\hyphenation{ana-ly-sed cha-rac-te-ristics dif-fe-rent func-tion-a-li-ties func-tion-a-li-ty un-der-stand-ing anal-y-sis tech-nol-o-gy find-ings stud-ies de-spite learn-ing cri-ti-cal mar-kers anal-y-sing wide-spread}
 
-% Insert the name of "your journal" with
-\journalname{Virtual Reality}
+\journal{Educational Research Review}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+%\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\input{header}
-\maketitle
+\begin{frontmatter}
+
+\title{Interactive, Collaborative and Multi-user Augmented Reality Applications in Primary and Secondary Education\\A Systematic Review}
+
+%% Group authors per affiliation:
+\author[afdfb752f06ee,ac6dea591aa79]{Stefano Masneri\corref{c-50e2b24c2fc4}}
+\ead{smasneri@vicomtech.org}\cortext[c-50e2b24c2fc4]{Corresponding author.}
+\author[afdfb752f06ee]{Ana Dom\'{\i}nguez}
+\ead{adominguez@vicomtech.org}
+\author[afdfb752f06ee]{I{\~{n}}igo Tamayo}
+\ead{itamayo@vicomtech.org}
+\author[afdfb752f06ee]{Mikel Zorrilla}
+\ead{mzorrilla@vicomtech.org}
+\author[ac6dea591aa79]{Mikel Larra{\~{n}}aga}
+\ead{m.larranaga@ehu.eus}
+\author[ac6dea591aa79]{Ana Arruarte}
+\ead{a.arruarte@ehu.eus}
+    
+\address[afdfb752f06ee]{Digital Media\unskip, 
+    Vicomtech\unskip, San Sebasti\'{a}n\unskip, Spain}
+  	
+\address[ac6dea591aa79]{Computer Languages and Systems\unskip, 
+    University of the Basque Country (UPV/EHU)\unskip, San Sebasti\'{a}n\unskip, Spain}
+
 \input{abstract}
+
+\begin{keyword}
+Augmented Reality \sep Education \sep Literature Review \sep Interactive Technologies \sep Multi-user applications \sep Collaborative
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+%\bibliography{mybibfile}
+
+%\input{header}
+%\maketitle
+
 \input{introduction}
 \input{methods}
 \input{results}
 \input{discussion}
 \input{conclusions}
-\input{acks}
+%\input{acks}
 
-\section*{Conflict of interest}
+\section*{Declaration of competing interest}
 The authors declare that they have no conflict of interest.
 
-\bibliographystyle{spbasic}
+%\bibliographystyle{spbasic}
 \bibliography{bibliography} 
 
 \end{document}
-
-
