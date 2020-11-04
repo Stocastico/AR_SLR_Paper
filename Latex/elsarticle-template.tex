@@ -1,0 +1,152 @@
+\listfiles
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{cite}
+\usepackage{svg}
+\usepackage{array}
+\usepackage{url}
+\usepackage{glossaries}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{setspace, caption}
+\usepackage{endnotes}
+
+%\usepackage[margin=2cm]{geometry}
+
+\glsdisablehyper
+\input{glossary}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\setlength{\extrarowheight}{2pt}
+\newcommand{\papersWithNumStudentInfo}[0]{77 }
+\newcommand{\papersWithEvaluation}[0]{59 }
+\newcommand{\hardwareHMD}[0]{six }
+\newcommand{\papersAfterTwentyEighteen}[0]{65 }
+\newcommand{\allPapers}[0]{1605 }
+\newcommand{\duplPapers}[0]{234 }
+\newcommand{\papersCheckAbstract}[0]{1371 }
+\newcommand{\papersToRead}[0]{229 }
+\newcommand{\papersExludedAfterReading}[0]{137 }
+\newcommand{\papersSelected}[0]{92 }
+\newcommand{\papersMultiuser}[0]{17 }
+\newcommand{\papersCollab}[0]{13 }
+\newcommand{\papersGames}[0]{11 }
+\modulolinenumbers[5]
+
+% setup tables and figures for APA format
+\DeclareCaptionLabelSeparator*{spaced}{\\[2ex]}
+\captionsetup[table]{textfont=it,format=plain,justification=justified,
+  singlelinecheck=false,labelsep=spaced,skip=0pt}
+\captionsetup[figure]{labelsep=period,labelfont=it,justification=justified,
+  singlelinecheck=false,font=doublespacing}
+% and increase spacing between rows in tables
+\renewcommand{\arraystretch}{1.5}
+  
+% setup double spacing, too
+\doublespacing
+
+\let\footnote=\endnote
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+
+% correct bad hyphenation here
+\hyphenation{ana-ly-sed cha-rac-te-ristics dif-fe-rent func-tion-a-li-ties func-tion-a-li-ty un-der-stand-ing anal-y-sis tech-nol-o-gy find-ings stud-ies de-spite learn-ing cri-ti-cal mar-kers anal-y-sing wide-spread}
+
+\journal{Educational Research Review}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% Numbered
+% \bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+% \bibliographystyle{model1a-num-names}
+
+%% Harvard
+% \bibliographystyle{model2-names}\biboptions{authoryear}
+
+%% Vancouver numbered
+% \usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+% \usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+% \usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style, distributed in TeX Live 2019
+%\bibliographystyle{elsarticle-num}
+% \usepackage{numcompress}\bibliographystyle{elsarticle-num-names}
+% \bibliographystyle{elsarticle-harv}\biboptions{authoryear}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Interactive, Collaborative and Multi-user Augmented Reality Applications in Primary and Secondary Education\\A Systematic Review}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+% \author[afdfb752f06ee,ac6dea591aa79]{Stefano Masneri\corref{c-50e2b24c2fc4}}
+% \ead{smasneri@vicomtech.org}\cortext[c-50e2b24c2fc4]{Corresponding author.}
+% \author[afdfb752f06ee]{Ana Dom\'{\i}nguez}
+% \ead{adominguez@vicomtech.org}
+% \author[afdfb752f06ee]{I{\~{n}}igo Tamayo}
+% \ead{itamayo@vicomtech.org}
+% \author[afdfb752f06ee]{Mikel Zorrilla}
+% \ead{mzorrilla@vicomtech.org}
+% \author[ac6dea591aa79]{Mikel Larra{\~{n}}aga}
+% \ead{m.larranaga@ehu.eus}
+% \author[ac6dea591aa79]{Ana Arruarte}
+% \ead{a.arruarte@ehu.eus}
+    
+% \address[afdfb752f06ee]{Digital Media\unskip, 
+%     Vicomtech\unskip, San Sebasti\'{a}n\unskip, Spain}
+  	
+% \address[ac6dea591aa79]{Computer Languages and Systems\unskip, 
+%     University of the Basque Country (UPV/EHU)\unskip, San Sebasti\'{a}n\unskip, Spain}
+
+\input{abstract}
+
+\begin{keyword}
+Augmented Reality \sep Education \sep Literature Review \sep Interactive Technologies \sep Multi-user applications \sep Collaborative
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\input{introduction}
+\input{methods}
+\input{results}
+\input{discussion}
+\input{conclusions}
+
+\bibliography{bibliography}
+
+\clearpage
+\newpage
+\pagenumbering{gobble}
+
+\input{tables}
+
+\input{figs}
+
+\theendnotes
+
+\end{document}
