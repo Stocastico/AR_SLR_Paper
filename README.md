@@ -5,4 +5,4 @@ This repo contains the latex source files of the paper, the spreadsheet used to 
 
 The figures used in the papers are generated through the **create_figures.ipynb** jupyter notebook.
 
-We stopped collecting data on 1 October 2020.
+We collected papers published from 2015 to 2020.
