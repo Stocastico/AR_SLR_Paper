@@ -1,0 +1,165 @@
+\documentclass[10pt, a4paper, oneside]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{jucs2e}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[normalem]{ulem}
+\usepackage{mathtools}
+\usepackage{scalerel}
+\usepackage{setspace}
+\usepackage[strict]{changepage}
+\usepackage{caption}
+\usepackage[letterspace=-50]{microtype}
+\usepackage{fontspec}
+\usepackage{afterpage}
+\usepackage{ragged2e}
+
+\setmainfont{Times New Roman}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\renewcommand{\baselinestretch}{0.9} 
+
+\graphicspath{{./figures/}}
+
+\usepackage[textwidth=8cm, margin=0cm, left=4.6cm, right=4.2cm, top=3.9cm, bottom=6.8cm, a4paper, headheight=0.5cm, headsep=0.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[format=plain, labelfont=it, textfont=it, justification=centering]{caption}
+\usepackage{breakcites}
+\usepackage{microtype}
+ 
+\apptocmd{\frame}{}{\justifying}{}
+
+
+\urlstyle{same}
+\pagestyle{fancy}
+
+\newcommand\jucs{{Journal of Universal Computer Science}}
+\newcommand\jucsvol{vol. 27, no. 1 (2021)}
+\newcommand\jucspages{2987-2989}
+\newcommand\jucssubmitted{1/1/2021}
+\newcommand\jucsaccepted{2/2/2021}
+\newcommand\jucsappeared{3/3/2021}
+\newcommand\jucslicence{ CC BY-ND 4.0}
+\newcommand\startingPage{2987}
+\setcounter{page}{\startingPage}
+
+
+%\usepackage{natbib}
+%\usepackage{cite}
+\usepackage{svg}
+\usepackage{array}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{setspace}
+\usepackage{endnotes}
+\usepackage{glossaries}
+\glsdisablehyper
+\input{content/glossary}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\setlength{\extrarowheight}{2pt}
+\newcommand{\papersWithNumStudentInfo}[0]{84 }
+\newcommand{\papersWithEvaluation}[0]{59 }
+\newcommand{\hardwareHMD}[0]{six }
+\newcommand{\papersAfterTwentyEighteen}[0]{73 }
+\newcommand{\allPapers}[0]{1829 }
+\newcommand{\duplPapers}[0]{238 }
+\newcommand{\papersCheckAbstract}[0]{1591 }
+\newcommand{\papersToRead}[0]{260 }
+\newcommand{\papersExludedAfterReading}[0]{160 }
+\newcommand{\papersSelected}[0]{100 }
+\newcommand{\papersMultiuser}[0]{17 }
+\newcommand{\papersCollab}[0]{13 }
+\newcommand{\papersGames}[0]{11 }
+
+%Author
+\newcommand\paperauthor{{Masneri, S. et al.: }}
+
+% Title
+\newcommand\titletitle{Interactive, Collaborative and Multi-user Augmented Reality Applications in Primary and Secondary Education\\A Systematic Review}
+
+\newcommand\papertitle{{Interactive, Collaborative and Multi-user Augmented Reality Applications in Primary and Secondary Education. A Systematic Review}}
+
+% Main header content
+\header{}
+
+\begin{document}
+
+\title{{\fontsize{14pt}{14pt}\selectfont{\vspace*{-3mm}\titletitle\vspace*{-1mm}}}}
+
+\author{{\bfseries\fontsize{10pt}{10pt}\selectfont{Stefano Masneri}} \\
+   {\fontsize{9pt}{12pt}\selectfont{(Vicomtech, Basque Research and Technology Alliance, San Sebastian, Spain\\
+   \orcid{0000-0003-1965-5704}, 
+   smasneri@vicomtech.org)}}
+   \and
+   {\bfseries\fontsize{10pt}{10pt}\selectfont{Ana Domínguez}}\\
+   {\fontsize{9pt}{12pt}\selectfont{(Vicomtech, Basque Research and Technology Alliance, San Sebastian, Spain \\
+   \orcid{0000-0002-9329-4225}, 
+   adominguez@vicomtech.org)}}
+    \and
+   {\bfseries\fontsize{10pt}{10pt}\selectfont{Mikel Zorrilla}}\\
+   {\fontsize{9pt}{12pt}\selectfont{(Vicomtech, Basque Research and Technology Alliance, San Sebastian, Spain \\
+   \orcid{0000-0003-2589-2490}, 
+   mzorrilla@vicomtech.org)}}
+    \and
+   {\bfseries\fontsize{10pt}{10pt}\selectfont{Mikel Larrañaga}}\\
+   {\fontsize{9pt}{12pt}\selectfont{(Computer Languages and Systems, University of the Basque Country (UPV/EHU), San Sebastian, Spain \\
+   \orcid{0000-0001-9727-1197}, 
+   mikel.larranaga@ehu.eus)}}
+    \and
+   {\bfseries\fontsize{10pt}{10pt}\selectfont{Ana Arruarte}}\\
+   {\fontsize{9pt}{12pt}\selectfont{(Computer Languages and Systems, University of the Basque Country (UPV/EHU), San Sebastian, Spain \\
+   \orcid{0000-0001-5361-6640}, 
+   a.arruarte@ehu.eus)}}
+}
+
+\label{first}
+\maketitle
+
+{\fontfamily{ptm}\selectfont
+    \input{content/abstract}
+}
+
+{\fontfamily{ptm}\selectfont
+\begin{keywords}
+{\fontsize{9pt}{9pt}\selectfont{
+Augmented Reality, Education, Literature Review, Interactive Technologies, Multi-user applications, Collaborative}}
+\end{keywords}}
+
+{\fontfamily{ptm}\selectfont
+\begin{category}
+{\fontsize{9pt}{9pt}\selectfont{
+H.5.1, H.5.2, K.3.1}}
+\end{category}}
+
+{\fontfamily{ptm}\selectfont
+\begin{doi}
+{\fontsize{9pt}{9pt}\selectfont{
+10.3897/jucs.\textless SubmissionNumber\textgreater}}
+\end{doi}}
+
+\input{content/introduction}
+\input{content/methods}
+\input{content/results}
+\input{content/discussion}
+\input{content/conclusions}
+%\input{content/acks}
+
+
+
+\begin{Acknowledgements}
+The research in Vicomtech has been supported by European Union’s Horizon 2020 research and innovation programme under grant agreement No 856533, project ARETE (Augmented Reality Interactive Educational System).
+The research in the UPV/EHU has been partially supported by the ADIAN grant IT980-16 from the Basque government.
+\end{Acknowledgements}
+
+
+\bibliographystyle{apalike}
+\fontsize{9pt}{10pt}\selectfont
+\bibliography{bibliography}
+
+\end{document}

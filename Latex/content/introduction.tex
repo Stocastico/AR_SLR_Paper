@@ -1,0 +1,57 @@
+\section{Introduction} \label{sec:introduction}
+Digital transformation is profoundly impacting and disrupting every facet of society, and education is no exception. In recent decades, \gls{AR} has broken into the educational area.
+Even though he term ``Augmented Reality'' was first introduced in 1992 by \cite{caudell1992augmented}, describing a concept of glasses that enabled workers to see virtual labels and information while assembly a Boeing jet’s wiring, it took many years before \gls{AR} was first applied in schools as a tool to facilitate learning. Nowadays, thanks to the widespread adoption of devices that support \gls{AR} applications, as well as the availability of software libraries such as ARKit\footnote{developers.google.com/ar/} or ARCore\footnote{developer.apple.com/documentation/arkit/} which greatly simplify and speed-up the development process, \gls{AR} has become a technology which is being more and more used in educational settings. Given its surge in popularity, AR has become an active research topic and several systematic studies have been performed to analyse how this technology has been used in educational contexts. Some studies presented an analysis of the advantages and drawbacks of \gls{AR} in generic educational settings \cite{akccayir2017advantages, radu2014augmented, diegmann2015benefits} or have provided insights on the status of the technology as well as suggestions for future research \cite{cheng2013affordances, arici2019research, bacca2014augmented, pellas2019augmenting}. Other reviews have focused on specific subjects, such as \gls{STEM} \cite{ibanez2018augmented, nielsen2016augmented, ahmad2020augmented} or language learning \cite{majid2021systematic, khoshnevisan2018augmented}; on specific topics such as \gls{AR}-based serious games \cite{li2017augmented, bartolome2011can, laine2018mobile}, the evaluation of the usage of \gls{AR} in schools \cite{da2019perspectives, chen2017review} or the impact of \gls{AR} applications in learning effectiveness \cite{garzon2019systematic}. Table~\ref{tab:slrsummary} summarises the content of some of the most recent and comprehensive \glspl{SLR} about \gls{AR} in educational settings.
+
+\begin{table*}[htbp]
+\small
+\begin{tabular}{M{2.8cm}M{2.9cm}M{1.4cm}M{4.5cm}}
+    \toprule
+         \textbf{Study} & \textbf{Purpose} & \textbf{Studies reviewed} & \textbf{Findings} \\
+    \midrule
+         \cite{garzon2019systematic} & Identify the status and tendencies in the usage of \gls{AR} in education & 61 & \gls{AR} has a medium effect on learning effectiveness; lack of studies considering accessibility features in \gls{AR} apps \\
+    \midrule     
+          \cite{pellas2019augmenting} & Explore the combination of \gls{ARGBL} & 21 & Motivation and enrichment are pillars of \gls{ARGBL}; \gls{ARGBL} compares favourably to traditional learning \\
+   \midrule 
+        \cite{ibanez2018augmented} & Perform qualitative analysis of the characteristics of \gls{AR} apps for \gls{STEM} learning & 28 & Most apps offer exploration or simulation activities, but usually without providing assistance in carrying out learning activities; similar design features across all studies \\
+    \midrule
+         \cite{akccayir2017advantages} & Identify advantages of \gls{AR} in education and identify current gaps in \gls{AR} research & 68 & Conflicting results regarding cognitive overload of \gls{AR}; low usability is the main challenge of \gls{AR} apps for education \\
+    \bottomrule
+
+\end{tabular}
+\caption{\fontsize{10pt}{11pt}\selectfont{\itshape{Summary of \glspl{SLR} about usage of AR in education.}}}
+\label{tab:slrsummary}
+\end{table*}
+
+Since the publication of the seminal paper on collaborative \gls{AR} by \cite{billinghurst2002collaborative}, which first discussed how AR could be used to enhance online and offline collaboration, much progress has been made in providing collaborative tools for \gls{AR} applications. To the best of our knowledge, only the work of Phon et al. \cite{6821833} evaluates the usage of collaborative \gls{AR} applications for education, by reviewing publications on the subject from 2000 to 2013. Given the many advancements of AR technology in the last few years, we believe that a systematic review of more recent publications is required, in order to see how AR apps are used as tools to improve collaboration between students as well as between students and teachers, or how multi-user interfaces facilitate cooperation and learning. 
+
+Cooperative learning, defined as the instructional use of small groups to promote students working together to maximise their own and each other's learning \cite{johnson1991cooperation}, has long been used as an educational approach to improve students' learning and performance \cite{johnson2008active, kuh2011piecing}. Technology can help foster collaboration among students, but their engagement depends on how much they can interact with the different tools. AR per se is not a collaborative tool: it is up to researchers and developers to provide such functionalities in an AR-based educational application. With this work, we aim to evaluate which publications described AR applications that provided the following features:
+\begin{itemize}
+    \item \emph{levels of interactivity}: the app should respond to the user input and let the student modify the app content using different interaction methods (which will be described in detail in Section \ref{sec:results:RQ1};
+    \item \emph{multi-user functionalities}: more than one user at the same time can use the app and the actions of one user are directly reflected in the other users' devices;
+    \item \emph{collaboration}: besides being multi-user, a collaborative app engages its users to collaborate or compete to reach a goal or complete a task.
+\end{itemize}
+Furthermore, we are also interested in analysing how the usage of these applications affected the students'\ engagement and their academic performance. 
+
+\begin{figure}[htbp]
+	\begin{center}
+	\includesvg[width=0.6\textwidth]{figures/papers_over_years}
+	\captionsetup{font=small}
+	\caption{\fontsize{10pt}{11pt}\selectfont{\itshape{Numbers of papers published per year with topic ``augmented reality'' and ``education'' from 2006 to 2020.}}}
+	\label{fig:pappublbg}
+    \end{center}
+\end{figure}
+
+The main contribution of this paper is to provide an \gls{SLR} of the \gls{AR} applications deployed in primary and secondary schools, with a particular focus on the collaborative, multi-user and interactive characteristics of such applications. We decided to consider only the articles published from 2015 to the end of 2020, since in 2015 the number of publications related to the application of \gls{AR} in education has seen a huge increase (as shown in Fig.~\ref{fig:pappublbg}).
+
+The \gls{RQ} that we addressed with this study are:
+\begin{itemize}
+    \item \gls{RQ}1: What collaborative, multi-user, interactive \gls{AR} applications have been used in an educational environment in primary or secondary schools?
+    \item \gls{RQ}2: Is there a motivation for using these \gls{AR} applications as an educational tool? If so, what is it?
+    \item \gls{RQ}3: How effective are these \gls{AR} applications at improving the students' knowledge of a subject? How is this evaluated?
+\end{itemize}
+
+Besides answering these research questions, we will also discuss the different technologies used by such applications, for example, the hardware required (\gls{HMD}, tablet or smartphone), the way the system tracks information from the real world (marker-based, markerless, location-based), whether the application augments other senses beyond vision, and which design strategies (if any) have been used to make the applications accessible.
+
+The rest of the paper is structured as follows. Section \ref{sec:methods} describes the methodological design of the study, including an explanation of the work done to plan, conduct and report the review. Section \ref{sec:results} presents the findings of the systematic review and the answers to the research questions. Section \ref{sec:discussion} discusses the results obtained and suggests possible research lines as well as trends for the future of AR in education. Finally, Section \ref{sec:conclusion} summarises the conclusions of the paper.
+% You must have at least 2 lines in the paragraph with the drop letter
+% (should never be an issue)
