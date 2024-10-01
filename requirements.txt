@@ -33,7 +33,7 @@ nbconvert==6.5.1
 nbformat==4.4.0
 networkx==2.4
 notebook==6.4.12
-numexpr==2.7.1
+numexpr==2.8.5
 numpy==1.22.0
 orca==1.5.3
 pandas==0.25.3
